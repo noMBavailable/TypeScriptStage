@@ -1,9 +1,18 @@
 "use strict";
 class User {
-    constructor(email, name) {
-        this.email = email;
+    constructor(name, email, message) {
         this.name = name;
-        this.city = "IJlst";
+        this.email = email;
+        this.message = message;
     }
 }
-const marc = new User("marc@dd", "jon");
+const form = document.getElementById("contactForm");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const user = new User(name, email, message);
+    alert(`Welcome, ${user.name}!`);
+});
+//# sourceMappingURL=index.js.map

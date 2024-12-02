@@ -1,11 +1,34 @@
-class User {
-    
-    readonly city: string = "IJlst"
+class User{
     constructor(
-        public email: string,
-        public name: string
-        ){
-    } 
+        public name: string, 
+        public email: string, 
+        public message: string){}
+
+    
 }
 
-const marc = new User("marc@dd", "jon")
+
+const form = document.getElementById("contactForm") as HTMLFormElement;
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent page reload
+
+    // Get the input element from the DOM
+    const name = (document.getElementById("name") as HTMLInputElement).value;
+    const email = (document.getElementById("email") as HTMLInputElement).value;
+    const message = (document.getElementById("message") as HTMLInputElement).value;
+
+    const user = new User(name, email, message);
+
+
+    alert(`Welcome, ${user.name}!`);
+
+})
+
+
+
+
+
+
+
+

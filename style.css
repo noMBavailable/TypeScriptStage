@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
    }
+
+/*#### ==> NavBar ####*/
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -24,8 +27,13 @@ li a:hover {
     background-color: #111;
     }
 li a:active {
-    background-color: aqua;
+    background-color: #333;
 }
+
+/*#### NavBar <== ####*/
+
+/*#### ==> Contact Page ####*/
+
 form {
     max-width: 400px;
     margin: auto;
@@ -57,7 +65,45 @@ textarea {
     resize: none; /* Disables the resize handle */
    }
 
+/*#### Contact Page <==  ####*/
 
+/*#### ==>  About Page ####*/
+.container_about {
+    
+    height: 25rem;
+    width: auto;
+    margin: 5rem 5rem;
+    
+}
+
+.container_about_position{
+    display: grid;
+    grid-auto-flow: column;
+    
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 7%;
+    width: 100%;
+    height: 100%;
+    
+   
+    
+}
+
+
+.img_about {
+    min-width: 5rem;
+    width: auto;
+    height: 100%;
+    background-color: red;
+    max-height: 100%;
+
+}
+.txt_about {
+    min-width: 20px;
+    max-width: 100%;
+    min-height: 20px;
+    
+}
 
   
 

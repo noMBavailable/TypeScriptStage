@@ -1,12 +1,16 @@
 html{
-     background-color: rgb(255, 118, 137)
+     background-color: rgb(255, 118, 137);
     }
 
 body{
     font-family: Arial, sans-serif;
-    margin: 20px 20px 0 20px;
-    background-color: rgb(255, 173, 187);  /*pink*         from other site #f8d7da*/ 
+    margin: 0;
    }
+
+.bg_navbar_and_page_content {
+    margin: 20px 20px 0 20px;
+    background-color: rgb(255, 255, 255);  /*pink*         from other site #f8d7da*/ 
+}
 
 /*#### ==> NavBar ####*/
 
@@ -134,7 +138,7 @@ textarea{
 }
 
 .container_side_panel {
-    margin: 5rem 1rem 5rem 1rem;
+    margin: 5rem;
     background-color:white;
     height: 35rem;
     
@@ -145,7 +149,6 @@ textarea{
     display: grid;
     grid-column-start: 1; /* makes it so the title takes up the first 2 columns*/
     grid-column-end: 3;
-    margin: 10px 20px;
 }
 .container_side_panel_content {
     display: grid;
@@ -169,15 +172,17 @@ textarea{
     display: grid;
     align-content: center;
 }
-
+.border_header {
+    border-bottom: 1px solid #e6e6e8;
+}
 
 
 
 .container_store_items {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     
-    margin: 3rem;
+    margin: 10rem 3rem 3rem 3rem;
     row-gap: 1rem;
     column-gap: 1rem;
 }
@@ -202,16 +207,25 @@ textarea{
 /*#### ==> Footer ####*/
 
 .container_footer {
-    background-color: white;
+    background-color: rgb(255, 118, 137);
+    border: 20px solid  rgb(255, 118, 137);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 3rem 1rem; /* this keeps the white background large enough */
+    
+}
+
+.container_footer_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0 5rem;
     justify-content: space-between;
 }
 
 .margin_child_footer {
-    /* margin: 5rem; */
-    margin: 0.5rem;
+    display: grid;
+    justify-content: space-evenly;
 }
-
+ 
+/*#### Footer <== ####*/

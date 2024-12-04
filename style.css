@@ -1,32 +1,41 @@
-body {
+html{
+     background-color: rgb(255, 118, 137)
+    }
+
+body{
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
+    background-color: rgb(255, 173, 187);  /*pink*         from other site #f8d7da*/ 
    }
 
 /*#### ==> NavBar ####*/
 
-ul {
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
    }
-li {
+
+li{
     float: left;
     }
-li a {
+
+li a{
 display: block;
 color: white;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 }
+
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+li a:hover{
     background-color: #111;
     }
-li a:active {
+
+li a:active{
     background-color: #333;
 }
 
@@ -34,22 +43,25 @@ li a:active {
 
 /*#### ==> Contact Page ####*/
 
-form {
+form{
     max-width: 400px;
     margin: auto;
    }
-label {
+
+label{
     display: block;
     margin: 10px 0 5px;
    }
-input, textarea {
+
+input, textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
    }
-button {
+
+button{
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
@@ -57,32 +69,33 @@ button {
     border-radius: 5px;
     cursor: pointer;
    }
-button:hover {
+
+button:hover{
     background-color: #0056b3;
    }
 
-textarea {
+textarea{
     resize: none; /* Disables the resize handle */
    }
 
 /*#### Contact Page <==  ####*/
 
 /*#### ==>  About Page ####*/
-.container_about {
+.container_about{
     
-    height: 25rem;
+    height: auto;
     width: auto;
-    margin: 5rem 5rem;
+    
     
 }
 
 .container_about_position{
     display: grid;
     grid-auto-flow: column;
-    
+    margin: 5rem 5rem 0rem 5rem; /*top right bottom left*/
     grid-template-columns: 1.5fr 1fr;
     column-gap: 7%;
-    width: 100%;
+    width: 90%;
     height: 100%;
     
    
@@ -90,23 +103,45 @@ textarea {
 }
 
 
-.img_about {
+.container_img_about{
     min-width: 5rem;
-    width: auto;
-    height: 100%;
-    background-color: red;
+    width: 100%;
+    height: 75%;
     max-height: 100%;
 
 }
-.txt_about {
+
+.container_txt_about_h1{
+    margin-top: 0;
+}
+
+.container_txt_about {
     min-width: 20px;
     max-width: 100%;
     min-height: 20px;
     
 }
 
-  
 
+/*#### ==>  Store Page ####*/
 
+.container_store_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    margin: 5rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.store_item {
+    width: 10rem;
+    height: 10rem;
+    
+    background-color: white;
+    border: 1px solid #111;
+}
+
+/*#### Store Page <== ####*/
 
 

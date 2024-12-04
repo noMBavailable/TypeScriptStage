@@ -147,7 +147,7 @@ textarea{
     grid-column-end: 3;
     margin: 10px 20px;
 }
-.test {
+.container_side_panel_content {
     display: grid;
     justify-items: start;
     align-content: start;
@@ -199,4 +199,19 @@ textarea{
 
 /*#### Store Page <== ####*/
 
+/*#### ==> Footer ####*/
+
+.container_footer {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 5rem;
+    justify-content: space-between;
+}
+
+.margin_child_footer {
+    /* margin: 5rem; */
+    margin: 0.5rem;
+}
 
